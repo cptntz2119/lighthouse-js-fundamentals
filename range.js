@@ -2,11 +2,15 @@
 function range(start, end, step){
 
   const resultNum = [];
+  if (start === undefined || end === undefined || step === undefined || start > end || step <= 0){
+    return resultNum;
+  }else {
   for (let i = start; i <= end; i += step){
     //console.log(i);
     resultNum.push(i);
     
   }
+}
   return resultNum;
 }
 
