@@ -5,7 +5,7 @@ function range(start, end, step){
   if (start === undefined || end === undefined || step === undefined || start > end || step <= 0){
     return resultNum;
   }else {
-  for (let i = start; i <= end; i += step){
+    for (let i = start; i <= end; i += step){
     //console.log(i);
     resultNum.push(i);
     
